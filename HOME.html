@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta chraset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <title>Dogediv</title>
+
+  
+  </head>
+
+ <style>
+
+  * {box-sizing: border-box;}
+        
+    body {background-color: antiquewhite;
+          background-size: 100%;
+        }
+        
+     h1 {font-family: Verdana;
+         font-size: 30px;
+              }
+ 
+     p {font-family: bold;
+        font-size: 80%;
+        }
+          
+      td {background-color: white;
+                 text-align: center;}      
+
+      table {background-color: white;
+             border-collapse: collapse;
+             width: 80%;}
+
+             .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.chat-popup {
+  position: fixed;
+  bottom: 0;
+  right: 120px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 100px;
+}
+    
+    .header {
+             color: white;
+             font-family: 'Lucida Sans', sans-serif;
+             text-align: center;
+             font-size: 50px;}  
+
+    th {border-bottom: 3px solid black;
+        text-align: center;}
+
+    .checkbtn{
+         font-size: 25px;
+         cursor: pointer;
+         float: right;
+         display: none;
+    }
+    #check{
+       display: none;
+    }
+
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+    .app {text-align: center;}
+
+    .cancel {background-color: red;}
+
+    .footer {
+             text-align: center;
+             font-size: 18px;}
+
+             nav ul li {color: black;}
+
+             @media screen and (max-width: 990px) {
+              .checkbtn{
+                 display: block;
+              }
+
+              * {box-sizing: border-box;}
+
+              body {background-size: 100%;}
+              
+              nav ul li{
+                  display: none;
+              }
+              ul li{
+                  display: block;
+                  margin:60px 0px;
+                  line-height: 20px;
+                }
+              #check:checked ~ ul{
+                  left:0;
+              }
+          }
+
+  </style>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+        <div class="container-fluid">
+          <h1><strong><img src="XA6KIXE6FBFM5EWSA25JI5YAU4.jpg" width="35px" height="20px">DOGEDIV</strong></h1>
+          <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+          <i class="fas fa-bars" data-bs-toggle="offcanvas" data-bs-target="#demo1"></i>
+      </label>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#deposit">Your Deposits</a></li>
+          <li class="nav-item"><a class="nav-link" href="Affiliate.html">Affiliate Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.trustpilot.com/review/dogediv.netlify.app" target="_blank">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Withdraw.html">Your Payout</a></li>
+          <li class="nav-item"><a class="nav-link" href="INDEX.html">Logout</a></li>
+        </ul>
+      </div>
+       </div>
+       </div>
+       </div>
+    </nav>    
+    
+    <h3 class=" p-2 bg-light">650.0000000 DOGE
+        Balance</h3>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div class="offcanvas offcanvas-end bg-dark" id="demo1">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <div class="offcanvas-body">
+          <ul>
+            <li><a href="Affiliate.html"><button type="button" class="btn btn-primary">Affiliate Program</button></a></li>
+            <li><a href="https://www.trustpilot.com/review/dogediv.netlify.app" target="_blank"><button type="button" class="btn btn-primary">Reviews</button></a></li>
+            <li><a href="Withdraw.html"><button type="button" class="btn btn-primary">Your Payout</button></a></li>
+            <li><a href="INDEX.html"><button type="button" class="btn btn-primary">Logout</button></a></li>
+         </ul>
+         </div>
+        </div>
+    
+
+     <h4 id="deposit">
+        <div class="container mt-3">
+          <div class="mt-4 p-4 bg-warning text-white rounded">
+           <h2>30% AFTER 3 DAYS</h2><br>
+           <P>Minimum Deposit 1 DOGE<br>Maximum Deposit 99999 DOGE
+           <a href="Choose.html"><button type="button" class="badge text-bg-primary link-dark">SELECT</button></a></p>
+          </div>
+        </div>
+        <br>
+
+        <div class="container mt-3">
+          <div class="mt-4 p-4 bg-warning text-white rounded">
+           <h2>600% AFTER 60 DAYS</h2><br>
+           <p>Minimum Deposit 1 DOGE<br>Maximum Deposit 99999 DOGE
+           <a href="Choose.html"><button type="button" class="badge text-bg-primary link-dark">SELECT</button></a></P>
+          </div>
+        </div>
+        <br>
+
+        <div class="container mt-3">
+          <div class="mt-4 p-4 bg-warning text-white rounded">
+           <h2>2000% AFTER 90 DAYS</h2><br>
+           <p>Minimum Deposit 1 DOGE<br>Maximum Deposit 99999 DOGE
+           <a href="Choose.html"><button type="button" class="badge text-bg-primary link-dark">SELECT</button></a></p>
+          </div>
+        </div>
+     </h4>
+     <br><br>
+
+     <div class="container mt-3">
+      <div class="mt-3 p-3 bg-warning text-white rounded">
+        <p>600.0000000 DOGE<br>YOUR INVESTMENT</p>
+      </div>
+     </div>
+     <br>
+
+     <div class="container mt-3">
+      <div class="mt-3 p-3 bg-warning text-white rounded">
+       <p>0<br>YOUR PARTNERS</p>
+      </div>
+     </div>
+     <br>
+
+     <div class="container mt-3">
+      <div class="mt-3 p-3 bg-warning text-white rounded">
+       <p>130.0000000 DOGE<br>PAID TOTAL</p>
+      </div>
+     </div>
+     <br>
+
+     <div class="container mt-3">
+      <div class="mt-3 p-3 bg-warning text-white rounded">
+       <p>0.0000000 DOGE<br>AFFILIATE PROGRAM</p>
+      </div>
+     </div>
+     <br><br>
+
+     <div class="header">
+      <span class="badge bg-primary"><strong>HISTORY</strong></span>
+     </div>
+
+   <table class="mt-2 p-2 table table-light table-hover"  style="width: 100%;">
+    <thead>
+      <tr>
+        <th>AMOUNT</th>
+        <th>PLAN</th>
+        <th>STATUS</th>
+        <th>PROFIT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>100doge</td>
+        <td>30% for 3days</td>
+        <td>paid</td>
+        <td>130doge</td>
+      </tr>
+      <tr>
+        <td>500doge</td>
+        <td>30% for 3days</td>
+        <td>processing</td>
+        <td>650doge</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+    <div class="container mt-3">
+      <div class="mt-3 p-4 bg-light text-black rounded">
+       <strong><h1 Class="app" id="about">ABOUT</h1></strong>
+
+        <h3>Dogediv was founded in the beginning of 2019 by the group of prince divine.<br>Before that they worked individually on one and the same platform,buying and selling cryptocurrency. we joined our effort and capital to create a company,which is to work with cloud mining on a commercial scale.</h3>
+  
+        <img src="Dogecoin_Logo.png" width="100px" heigth="100px">
+
+        <h3>Dogediv Link<h3>
+    
+        <i><a href="https://dogediv.netlify.app/" target="_blank" class="bg-warning text-white">visit Dogediv.netlify.app!</a></i>
+
+        <h1><i>Author: Prince Divine</i></h1>
+        <h1 class="footer">
+        <button type="button" class="btn btn-warning" onclick="showForm()">Message us</button></h1>
+       </div>
+     </div>
+
+     <div class="chat-popup" id="myForm">
+     <form action="https://formsubmit.co/divdoge@gmail.com" method="POST" class="form-container">
+       <label for="email" class="form-label">Email</label>
+       <input type="email" class="form-control" />
+       <label for="msg" class="form-label">Message</label>
+       <textarea placeholder="Text message..." name="msg" required></textarea><br>
+       <button type="submit" class="btn btn-success">Send</button>
+       <button type="button" class="btn cancel" onclick="hideForm()">Close</button>
+    </form>
+  </div>
+  
+    <script>
+        var x = document.getElementById("myForm");
+          x.style.display = "none";
+          
+      function showForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      function hideForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+      </script>
+
+</body>
+</html>
